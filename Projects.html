@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects - SolarGen Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>☀️ SolarGen Tech</h1>
+    <p>Installation Projects</p>
+</header>
+
+<nav>
+    <a href="Dashboard.html">Dashboard</a>
+    <a href="Inventory.html">Inventory</a>
+    <a href="Projects.html">Projects</a>
+    <a href="Teams.html">Teams</a>
+    <a href="Allocations.html">Allocations</a>
+    <a href="Reports.html">Reports</a>
+</nav>
+
+<main>
+
+    <h2>Installation Projects</h2>
+
+    <div class="box">
+
+        <label>Client Name</label>
+        <input id="client">
+
+        <label>Site Address</label>
+        <input id="address">
+
+        <label>Project Scope</label>
+        <textarea id="scope"></textarea>
+
+        <label>Roof Type</label>
+
+        <select id="roof">
+            <option>Tile</option>
+            <option>Metal</option>
+            <option>Concrete</option>
+            <option>Other</option>
+        </select>
+
+        <label>Site Inspection Notes</label>
+        <textarea id="notes"></textarea>
+
+        <label>Status</label>
+
+        <select id="projectStatus">
+            <option>Planned</option>
+            <option>Site Visit</option>
+            <option>In Progress</option>
+            <option>Completed</option>
+        </select>
+
+        <button onclick="addProject()">
+            Add Project
+        </button>
+
+    </div>
+
+    <div class="box">
+
+        <h3>Projects</h3>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Client</th>
+                    <th>Address</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="projectList"></tbody>
+
+        </table>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
