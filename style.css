@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f5f3;
+    color: #222;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #087443;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background: #064d2d;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 6px 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    background: #064d2d;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+nav button:hover {
+    background: #087443;
+}
+
+
+/* =========================
+   TABS
+========================= */
+
+.tab {
+    display: none;
+    padding: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.tab.active {
+    display: block;
+}
+
+
+/* =========================
+   BOXES
+========================= */
+
+.box {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+.box h2 {
+    color: #087443;
+}
+
+
+/* =========================
+   FORMS
+========================= */
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 7px 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.add {
+    background: #087443;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.add:hover {
+    background: #065c35;
+}
+
+.delete {
+    background: #d62828;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.delete:hover {
+    background: #a51e1e;
+}
+
+
+/* =========================
+   DASHBOARD CARDS
+========================= */
+
+.cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    flex: 1;
+    min-width: 180px;
+    border-left: 5px solid #087443;
+    box-shadow: 0 2px 8px #ccc;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #555;
+}
+
+.card h2 {
+    color: #087443;
+    font-size: 30px;
+}
+
+
+/* =========================
+   TABLES
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #087443;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f7f7f7;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    }
+
+    .tab {
+        padding: 15px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
