@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reports - SolarGen Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>☀️ SolarGen Tech</h1>
+    <p>Reports</p>
+</header>
+
+<nav>
+    <a href="Dashboard.html">Dashboard</a>
+    <a href="Inventory.html">Inventory</a>
+    <a href="Projects.html">Projects</a>
+    <a href="Teams.html">Teams</a>
+    <a href="Allocations.html">Allocations</a>
+    <a href="Reports.html">Reports</a>
+</nav>
+
+<main>
+
+    <h2>Weekly Reports</h2>
+
+    <div class="box">
+
+        <h3>Stock Report</h3>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Total</th>
+                    <th>Available</th>
+                    <th>Allocated</th>
+                </tr>
+            </thead>
+
+            <tbody id="stockReport"></tbody>
+
+        </table>
+
+    </div>
+
+    <div class="box">
+
+        <h3>Completed Installations</h3>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Client</th>
+                    <th>Team</th>
+                </tr>
+            </thead>
+
+            <tbody id="completedReport"></tbody>
+
+        </table>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
