@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teams - SolarGen Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>☀️ SolarGen Tech</h1>
+    <p>Technician Teams</p>
+</header>
+
+<nav>
+    <a href="Dashboard.html">Dashboard</a>
+    <a href="Inventory.html">Inventory</a>
+    <a href="Projects.html">Projects</a>
+    <a href="Teams.html">Teams</a>
+    <a href="Allocations.html">Allocations</a>
+    <a href="Reports.html">Reports</a>
+</nav>
+
+<main>
+
+    <h2>Technician Teams</h2>
+
+    <div class="box">
+
+        <label>Team Name</label>
+        <input id="teamName">
+
+        <label>Lead Technician</label>
+        <input id="leadTech">
+
+        <button onclick="addTeam()">
+            Add Team
+        </button>
+
+    </div>
+
+    <div class="box">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Lead Technician</th>
+                </tr>
+            </thead>
+
+            <tbody id="teamList"></tbody>
+
+        </table>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
